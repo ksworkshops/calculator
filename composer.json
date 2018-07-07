@@ -1,0 +1,21 @@
+{
+    "name": "ksworkshop/calculator",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kapil Sharma",
+            "email": "kapil@kapilsharma.info"
+        }
+    ],
+    "autoload": {
+      "psr-4": {"phpreboot\\": "src/phpreboot"}
+    },
+    "autoload-dev": {
+      "psr-4": {"phpreboot\\": "tests/phpreboot"}
+    },
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^5"
+    }
+}
