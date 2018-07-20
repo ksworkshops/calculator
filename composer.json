@@ -14,7 +14,9 @@
     "autoload-dev": {
       "psr-4": {"phpreboot\\": "tests/phpreboot"}
     },
-    "require": {},
+    "require": {
+        "symfony/console": "^4.1"
+    },
     "require-dev": {
         "phpunit/phpunit": "^5"
     }

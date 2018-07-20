@@ -1,0 +1,17 @@
+#!/usr/bin/env php
+<?php
+
+require __DIR__.'/vendor/autoload.php';
+
+use Symfony\Component\Console\Application;
+use phpreboot\calculator\CalculatorCommand;
+
+$application = new Application('echo', '1.0.0');
+
+$calculator = new CalculatorCommand();
+
+// ... register commands
+$application->add($calculator);
+$application->setDefaultCommand($calculator->getName(), true);
+
+$application->run();
