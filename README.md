@@ -1,10 +1,10 @@
 # Calculator
 
-Calculator application build during PHP Reboot `Making PHP code from Scratch' workshop.
+Calculator application build during PHP Reboot `Making PHP Application from Scratch' workshop.
 
 This is the code we discussed in the videos. Videos of the series can be found at:
 
-1. [Project setup and problem statement]() (Code branch `Chapter`).
+1. [Project setup and problem statement]() (Code branch `Chapter1`).
 1. [Symfony console component]() (Code branch `Chapter2`).
 
 ## Problem that we are solving in videos and example.
