@@ -20,7 +20,15 @@ class CalculatorCommand extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $output->writeln('Operator = ' . $input->getArgument('operator'));
-        $output->writeln('Numbers = ' . $input->getArgument('numbers'));
+        $numbers = $input->getArgument('numbers');
+        $numberArray = explode(',', $numbers);
+
+        $operator = $input->getArgument('operator');
+
+        if ('sum' === $operator) {
+            $output->write(array_sum($numberArray));
+        } else if ('difference' === $operator) {
+            $output->write($numberArray[0] - $numberArray[1]);
+        }
     }
 }
